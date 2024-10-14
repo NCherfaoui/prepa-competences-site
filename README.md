@@ -1,4 +1,5 @@
 # Prépa Compétences - Site de Présentation
+
 Bienvenue sur le dépôt GitHub du site de présentation de "Prépa Compétences". Ce site a pour objectif de présenter le programme "Prépa Compétences" ainsi que l'application que nous avons développée en groupe.
 
 ## Table des matières
@@ -18,6 +19,10 @@ Prépa Compétences est un accompagnement individuel innovant qui vise à sécur
 ## Lien vers le Dépôt du projet Prépa Compétences
 
 - [Dépôt Principal](https://github.com/CDA29/prepa_competences)
+
+## Visiter le site de présentation
+
+Vous pouvez visiter le site de présentation à l'adresse suivante : [Prépa Compétences - Site de Présentation](https://ncherfaoui.github.io/prepa-competences-site/)
 
 ## Stack Technologique du projet Prépa Compétences
 
@@ -40,7 +45,6 @@ Prépa Compétences est un accompagnement individuel innovant qui vise à sécur
 - **Authentification**: JWT
 - **Documentation**: Swagger
 - **Containerisation**: Docker
-
 
 ### DevOps
 
