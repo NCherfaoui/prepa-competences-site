@@ -2,35 +2,35 @@
     {
       "title": "Inscription et Profil",
       "description":
-        "Les bénéficiaires peuvent s'inscrire et créer leur profil, en renseignant leurs compétences et objectifs professionnels.",
+        "Les candidats peuvent s'inscrire et créer leur profil, en renseignant leurs compétences et objectifs professionnels.",
       "image":
         "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     },
     {
       "title": "Planification des Ateliers",
       "description":
-        "Les formateurs peuvent planifier et organiser des ateliers, que les bénéficiaires peuvent consulter et auxquels ils peuvent s'inscrire.",
+        "Les formateurs peuvent planifier et organiser des ateliers, que les candidats peuvent consulter et auxquels ils peuvent s'inscrire.",
       "image":
         "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     },
     {
       "title": "Suivi des Progrès",
       "description":
-        "Les bénéficiaires et les formateurs peuvent suivre les progrès réalisés au fil du temps, avec des visualisations claires des compétences acquises.",
+        "Les candidats et les formateurs peuvent suivre les progrès réalisés au fil du temps, avec des visualisations claires des compétences acquises.",
       "image":
         "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     },
     {
       "title": "Évaluation des Compétences",
       "description":
-        "Les formateurs peuvent évaluer les compétences des bénéficiaires et fournir des retours détaillés pour guider leur progression.",
+        "Les formateurs peuvent évaluer les compétences des candidats et fournir des retours détaillés pour guider leur progression.",
       "image":
         "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     },
     {
       "title": "Communication Intégrée",
       "description":
-        "Une messagerie intégrée permet une communication fluide entre bénéficiaires, formateurs et administrateurs.",
+        "Une messagerie intégrée permet une communication fluide entre candidats, formateurs et administrateurs.",
       "image":
         "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     },
@@ -86,14 +86,14 @@
     {
       "title": "Suivi des Stages en Entreprise",
       "description":
-        "Un module dédié permet de suivre les stages en entreprise des bénéficiaires, incluant les évaluations et les retours d'expérience.",
+        "Un module dédié permet de suivre les stages en entreprise des candidats, incluant les évaluations et les retours d'expérience.",
       "image":
         "https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     },
     {
       "title": "Gestion des Compétences",
       "description":
-        "Un référentiel de compétences permet de cartographier et de suivre l'évolution des compétences de chaque bénéficiaire.",
+        "Un référentiel de compétences permet de cartographier et de suivre l'évolution des compétences de chaque candidat.",
       "image":
         "https://images.unsplash.com/photo-1434626881859-194d67b2b86f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
     },

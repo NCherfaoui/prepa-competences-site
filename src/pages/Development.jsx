@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import CustomButton from '@/components/ui/CustomButton';
+import CustomButton from "@/components/ui/CustomButton";
+import PdfModal from "@/components/PdfModal";
 
 import {
   SiReact,
@@ -44,8 +45,16 @@ const Development = () => {
     { icon: SiTailwindcss, name: "TailwindCSS" },
     { icon: SiOpenai, name: "ChatGPT" },
   ];
-  const [isUMLModalOpen, setIsUMLModalOpen] = useState(false);
   const navigate = useNavigate();
+  const [isUMLModalOpen, setIsUMLModalOpen] = useState(false);
+  const [isCahierModalOpen, setIsCahierModalOpen] = useState(false);
+  const [isBilanModalOpen, setIsBilanModalOpen] = useState(false);
+
+  const openCahierModal = () => setIsCahierModalOpen(true);
+  const closeCahierModal = () => setIsCahierModalOpen(false);
+
+  const openBilanModal = () => setIsBilanModalOpen(true);
+  const closeBilanModal = () => setIsBilanModalOpen(false);
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -86,6 +95,15 @@ const Development = () => {
             réunions quotidiennes pour assurer une communication efficace et une
             progression constante du projet.
           </p>
+          <p className="text-gray-600 dark:text-gray-300 mb-4">
+            Nous avons également réalisé un cahier des charges détaillé pour
+            définir les objectifs et les exigences du projet. Vous pouvez
+            consulter le cahier des charges en cliquant sur le bouton
+            ci-dessous.
+          </p>
+          <CustomButton onClick={openCahierModal} className="mt-4">
+            Voir le cahier des charges
+          </CustomButton>
         </CardContent>
       </Card>
 
@@ -128,7 +146,9 @@ const Development = () => {
             </li>
             <li>Améliorer les performances et la cohérence des données</li>
           </ul>
-          <CustomButton className="mt-4">En savoir plus sur la migration</CustomButton>
+          <CustomButton className="mt-4">
+            En savoir plus sur la migration
+          </CustomButton>
         </CardContent>
       </Card>
 
@@ -149,7 +169,9 @@ const Development = () => {
             <li>Une esthétique moderne et cohérente</li>
             <li>Une meilleure expérience utilisateur</li>
           </ul>
-          <CustomButton className="mt-4">Explorer les composants Shadcn</CustomButton>
+          <CustomButton className="mt-4">
+            Explorer les composants Shadcn
+          </CustomButton>
         </CardContent>
       </Card>
 
@@ -189,7 +211,10 @@ const Development = () => {
             Voici un exemple de diagramme UML que nous avons réalisé au début du
             projet :
           </p>
-          <CustomButton className="mt-4" onClick={() => setIsUMLModalOpen(true)}>
+          <CustomButton
+            className="mt-4"
+            onClick={() => setIsUMLModalOpen(true)}
+          >
             Voir le diagramme UML
           </CustomButton>
           <p>
@@ -210,10 +235,46 @@ const Development = () => {
           </CustomButton>
         </CardContent>
       </Card>
+
+      <Card className="mb-6 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+        <CardHeader>
+          <CardTitle>Fonctionnalité de génération de PDF</CardTitle>
+          <CardDescription>Bilan de sortie Prépa Compétences</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <p className="mb-4">
+            L'application permet de générer un PDF du bilan de sortie Prépa
+            Compétences, complété par le candidat ainsi que son formateur. Ce
+            PDF est ensuite transmis par mail à tous les acteurs, y compris le
+            conseiller France Travail.
+          </p>
+          <CustomButton className="mt-4" onClick={openBilanModal}>
+            Voir un modèle de PDF
+          </CustomButton>
+        </CardContent>
+      </Card>
       <UMLModal
         isOpen={isUMLModalOpen}
         onClose={() => setIsUMLModalOpen(false)}
       />
+      {/* Modal pour le cahier des charges */}
+      <PdfModal isOpen={isCahierModalOpen} onClose={closeCahierModal}>
+        <iframe
+          src="./cahier-des-charges.pdf"
+          width="100%"
+          height="600px"
+          title="Cahier des Charges"
+        ></iframe>
+      </PdfModal>
+      {/* Modal pour le modèle de PDF */}
+      <PdfModal isOpen={isBilanModalOpen} onClose={closeBilanModal}>
+        <iframe
+          src="./bilan-de-sortie.pdf"
+          width="100%"
+          height="600px"
+          title="Bilan de Sortie"
+        ></iframe>
+      </PdfModal>
     </div>
   );
 };
