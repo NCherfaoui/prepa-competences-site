@@ -1,0 +1,264 @@
+
+# Project Structure
+
+## Root Directory
+- `LICENSE/`: License information.
+- `compose.yaml`: Docker Compose configuration file.
+- `package-lock.json`: Lock file for npm dependencies.
+- `start.sh`: Shell script to start the project.
+
+## Forme Directory (Backend)
+- `Dockerfile`: Dockerfile for the backend.
+- `compose.prod.yaml`: Docker Compose configuration for production.
+- `compose.yaml`: Docker Compose configuration.
+- `mvnw/`: Maven wrapper script.
+- `mvnw.cmd`: Maven wrapper script for Windows.
+- `src/`: Source code directory.
+  - `main/`: Main source code directory.
+    - `java/`: Java source code directory.
+      - `com/`: Java package.
+        - `forme/`: Java package.
+          - `app/`: Application package.
+            - `FormeApplication.java`: Main Spring Boot application class.
+            - `auth/`: Authentication package.
+              - `AuthService.java`: Authentication service.
+              - `dto/`: Data Transfer Objects for authentication.
+                - `AuthenticationRequest.java`
+                - `AuthentificationResponse.java`
+                - `RegisterRequest.java`
+            - `config/`: Configuration package.
+              - `AppConfig.java`
+              - `JwtAuthFilter.java`
+              - `JwtService.java`
+              - `KeyGeneratorUtil.java`
+              - `SecurityConfig.java`
+              - `SwaggerConfig.java`
+            - `controller/`: Controller package.
+              - `AuthController.java`
+              - `CenterController.java`
+              - `FormController.java`
+              - `PathController.java`
+              - `UserController.java`
+            - `dto/`: Data Transfer Objects.
+              - `CenterDto.java`
+              - `FormDto.java`
+              - `PathDto.java`
+              - `PathListDto.java`
+            - `model/`: Model package.
+              - `Assessment.java`
+              - `Center.java`
+              - `Document.java`
+              - `Engagement.java`
+              - `ExitAssessment.java`
+              - `Form.java`
+              - `FranceTravailAdvisor.java`
+              - `Notification.java`
+              - `Path.java`
+              - `Phase.java`
+              - `Workshop.java`
+            - `repository/`: Repository package.
+              - `CenterRepository.java`
+              - `FormRepository.java`
+              - `PathRepository.java`
+            - `service/`: Service package.
+              - `CenterService.java`
+              - `FormService.java`
+              - `PathService.java`
+            - `user/`: User package.
+              - `Role.java`
+              - `dto/`: Data Transfer Objects for user.
+                - `CandidateDto.java`
+                - `FormerDto.java`
+                - `UserDto.java`
+                - `UserListDto.java`
+                - `UserUpdateDto.java`
+              - `model/`: User model package.
+                - `Admin.java`
+                - `Candidate.java`
+                - `Former.java`
+                - `User.java`
+              - `repository/`: User repository package.
+                - `AdminRepository.java`
+                - `CandidateRepository.java`
+                - `FormerRepository.java`
+                - `UserRepository.java`
+              - `service/`: User service package.
+                - `CandidateService.java`
+                - `FormerService.java`
+                - `UserService.java`
+            - `utils/`: Utility package.
+              - `MapperDTO.java`
+  - `resources/`: Resources directory.
+  - `test/`: Test directory.
+    - `java/`: Java test directory.
+      - `com/`: Java package.
+        - `forme/`: Java package.
+          - `app/`: Application package.
+            - `FormeApplicationTests.java`
+            - `auth/`: Authentication test package.
+              - `AuthServiceTest.java`
+            - `controller/`: Controller test package.
+              - `AuthControllerTest.java`
+              - `CenterControllerTest.java`
+              - `FormControllerTest.java`
+              - `PathControllerTest.java`
+              - `UserControllerTest.java`
+            - `model/`: Model test package.
+              - `AssessmentTest.java`
+              - `CenterTest.java`
+              - `DocumentTest.java`
+              - `EngagementTest.java`
+              - `ExitAssessmentTest.java`
+              - `FormTest.java`
+              - `FranceTravailAdvisorTest.java`
+              - `NotificationTest.java`
+              - `PathTest.java`
+              - `PhaseTest.java`
+              - `WorkshopTest.java`
+            - `repository/`: Repository test package.
+              - `CenterRepositoryTest.java`
+              - `FormRepositoryTest.java`
+              - `PathRepositoryTest.java`
+            - `service/`: Service test package.
+              - `CenterServiceTest.java`
+              - `FormServiceTest.java`
+              - `PathServiceTest.java`
+            - `user/`: User test package.
+              - `UserTest.java`
+              - `repository/`: User repository test package.
+                - `AdminRepositoryTest.java`
+                - `CandidateRepositoryTest.java`
+                - `FormerRepositoryTest.java`
+                - `UserRepositoryTest.java`
+              - `service/`: User service test package.
+                - `UserServiceTest.java`
+
+## form-front Directory (Frontend)
+- `components.json`: Components configuration file.
+- `eslint.config.js`: ESLint configuration file.
+- `index.html`: Main HTML file.
+- `package-lock.json`: Lock file for npm dependencies.
+- `package.json`: npm package configuration file.
+- `postcss.config.js`: PostCSS configuration file.
+- `tailwind.config.js`: Tailwind CSS configuration file.
+- `tsconfig.app.json`: TypeScript configuration file for the app.
+- `tsconfig.json`: TypeScript configuration file.
+- `tsconfig.node.json`: TypeScript configuration file for Node.js.
+- `vite.config.ts`: Vite configuration file.
+- `public/`: Public assets directory.
+- `src/`: Source code directory.
+  - `App.tsx`: Main React component.
+  - `api.ts`: API configuration file.
+  - `index.css`: Main CSS file.
+  - `main.tsx`: Main entry point for the React application.
+  - `vite-env.d.ts`: Vite environment types.
+  - `assets/`: Assets directory.
+  - `components/`: Components directory.
+    - `data-table.tsx`
+    - `footer.tsx`
+    - `hero.tsx`
+    - `logo.tsx`
+    - `mode-toggle.tsx`
+    - `navbar.tsx`
+    - `dashboard-admin/`: Dashboard admin components.
+      - `Sidebar.tsx`
+      - `context-menu-selection.tsx`
+      - `header-dashboard.tsx`
+      - `candidate/`: Candidate components.
+        - `candidate-tab-content.tsx`
+        - `columns-candidate.tsx`
+        - `new-candidate-modal.tsx`
+      - `center/`: Center components.
+        - `center-tab-content.tsx`
+        - `columns-center.tsx`
+        - `new-center-modal.tsx`
+      - `classe/`: Classe components.
+        - `classe-tab-content.tsx`
+        - `columns-classe.tsx`
+        - `new-classe-modal.tsx`
+      - `form/`: Form components.
+        - `columns-form.tsx`
+        - `form-tab-content.tsx`
+      - `former/`: Former components.
+        - `columns-former.tsx`
+        - `former-tab-content.tsx`
+        - `new-former-modal.tsx`
+    - `form/`: Form components.
+      - `editor.tsx`
+      - `elements.ts`
+      - `blocks/`: Form blocks.
+        - `block.tsx`
+      - `ui/`: Form UI components.
+        - `btn-submit.tsx`
+        - `date-form.tsx`
+        - `input-form.tsx`
+        - `label-form.tsx`
+        - `radio-form.tsx`
+        - `select-form.tsx`
+        - `signature.tsx`
+        - `title-form.tsx`
+    - `modal/`: Modal components.
+      - `confirm-modal.tsx`
+    - `provider/`: Provider components.
+      - `theme-provider.tsx`
+    - `ui/`: UI components.
+      - `alert-dialog.tsx`
+      - `button.tsx`
+      - `calendar.tsx`
+      - `card.tsx`
+      - `checkbox.tsx`
+      - `command.tsx`
+      - `context-menu.tsx`
+      - `dialog.tsx`
+      - `dropdown-menu.tsx`
+      - `form.tsx`
+      - `input.tsx`
+      - `label.tsx`
+      - `popover.tsx`
+      - `radio-group.tsx`
+      - `select.tsx`
+      - `separator.tsx`
+      - `sonner.tsx`
+      - `table.tsx`
+      - `tabs.tsx`
+      - `textarea.tsx`
+      - `toast.tsx`
+      - `toaster.tsx`
+      - `use-toast.ts`
+  - `dto/`: Data Transfer Objects.
+    - `AuthLogin.ts`
+    - `AuthRegister.ts`
+    - `CreateCenter.ts`
+    - `CreatePath.ts`
+  - `hooks/`: Custom hooks.
+    - `use-toast.ts`
+  - `lib/`: Utility functions.
+    - `utils.ts`
+  - `page/`: Page components.
+    - `candidate-details.page.tsx`
+    - `candidate.page.tsx`
+    - `dashboard-admin.page.tsx`
+    - `forgot.page.tsx`
+    - `login.page.tsx`
+    - `new-form.page.tsx`
+    - `prepa-competence.page.tsx`
+    - `signup.page.tsx`
+  - `service/`: Service components.
+    - `auth.service.ts`
+    - `candidate.service.ts`
+    - `center.service.ts`
+    - `classe.service.ts`
+    - `form.service.ts`
+    - `former.service.ts`
+    - `sse.service.ts`
+  - `store/`: Store components.
+    - `use-store.ts`
+  - `types/`: TypeScript types.
+    - `Assessment.ts`
+    - `Candidate.ts`
+    - `Center.ts`
+    - `Column.ts`
+    - `Form.ts`
+    - `Former.ts`
+    - `Path.ts`
+    - `Role.ts`
