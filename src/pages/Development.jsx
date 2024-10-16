@@ -3,7 +3,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import CustomButton from "@/components/ui/CustomButton";
 import PdfModal from "@/components/PdfModal";
-
 import {
   SiReact,
   SiMongodb,
@@ -56,6 +55,50 @@ const Development = () => {
   const openBilanModal = () => setIsBilanModalOpen(true);
   const closeBilanModal = () => setIsBilanModalOpen(false);
 
+
+
+  // TODO: A completer
+//  1- Gestion de projet Agile
+// Utilisation de ClickUp
+// Capture d'écran du tableau Kanban ou du backlog
+// Explication de la méthodologie Scrum utilisée
+// 2- Cahier des charges
+// Résumé des principales exigences
+// Lien vers le document complet
+// 3- Modélisation UML
+// Diagrammes de cas d'utilisation
+// Diagrammes de classes
+// Diagrammes de séquence
+// Modal pour afficher chaque diagramme en grand format
+// 4- Conception de la base de données
+// Modèle Conceptuel de Données (MCD)
+// Modèle Logique de Données (MLD)
+// Schéma de la base de données
+// Modal pour afficher le MCD et les tables
+// 5- Phase de réflexion et de conception
+// Brainstorming initial
+// Choix des technologies
+// Architecture du système
+// 6- Développement Frontend
+// Mise en place de React avec Vite
+// Intégration de Tailwind CSS
+// Développement des composants principaux
+// 7- Développement Backend
+// Configuration de Spring Boot
+// Mise en place de l'API RESTful
+// Intégration avec PostgreSQL
+// Intégration et tests
+// 8- Tests
+// Tests unitaires
+// Tests d'intégration
+// Tests utilisateurs
+// 9- Déploiement
+// Configuration de Docker
+// Mise en place de l'intégration continue avec Jenkins
+// 10- Démonstration de l'application
+// Lien vers l'application en local (localhost)
+// Ou lien vers la page Demo.jsx pour une présentation en slides
+
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-6">Développement du Projet</h1>
@@ -81,6 +124,8 @@ const Development = () => {
           </CustomButton>
         </div>
       </Card>
+
+      {/* TODO: fetch from json file */}
 
       <Card className="mb-6 dark:bg-gray-800 p-6 rounded-lg shadow-lg">
         <CardHeader>

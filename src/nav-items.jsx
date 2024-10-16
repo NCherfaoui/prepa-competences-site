@@ -5,6 +5,7 @@ import Features from "./pages/Features.jsx";
 import Development from "./pages/Development.jsx";
 import Demo from "./pages/Demo.jsx";
 import TechDetails from "./components/TechDetails.jsx";
+import ProcessusDev from "./pages/ProcessusDev.jsx";
 
 export const navItems = [
   {
@@ -30,6 +31,12 @@ export const navItems = [
     to: "/development",
     icon: <CodeIcon className="h-4 w-4" />,
     page: <Development />,
+  },
+  {
+    title: "Processus de Développement",
+    to: "/development-process",
+    icon: <CodeIcon className="h-4 w-4" />,
+    page: <ProcessusDev />,
   },
   {
     title: "Démo",

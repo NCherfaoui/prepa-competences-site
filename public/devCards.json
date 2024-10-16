@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "title": "Gestion de Projet Agile",
+    "description": "Utilisation de ClickUp et méthodologie Scrum",
+    "content": "Notre équipe a adopté la méthodologie Scrum et utilisé ClickUp pour gérer efficacement le projet. Nous avons organisé notre travail en sprints de deux semaines, avec des daily stand-ups, des revues de sprint et des rétrospectives régulières. ClickUp nous a permis de visualiser notre backlog, de suivre les tâches en cours et de mesurer notre vélocité.",
+    "link": "https://clickup.com/"
+  },
+  {
+    "id": 2,
+    "title": "Cahier des Charges",
+    "description": "Définition des exigences et spécifications du projet",
+    "content": "Le cahier des charges a été élaboré en collaboration avec les parties prenantes. Il détaille les fonctionnalités requises, les contraintes techniques, les objectifs du projet et les critères de succès. Ce document a servi de référence tout au long du développement.",
+    "link": "#"
+  },
+  {
+    "id": 3,
+    "title": "Modélisation UML",
+    "description": "Conception des diagrammes UML pour visualiser l'architecture",
+    "content": "Nous avons créé plusieurs diagrammes UML pour modéliser notre système, incluant des diagrammes de cas d'utilisation, de classes, de séquence et d'activité. Ces diagrammes ont aidé à clarifier la structure et le comportement de notre application.",
+    "link": "#"
+  },
+  {
+    "id": 4,
+    "title": "Conception de la Base de Données",
+    "description": "Élaboration du MCD, MLD et schéma de la base de données",
+    "content": "La conception de notre base de données a commencé par l'élaboration d'un Modèle Conceptuel de Données (MCD), suivi d'un Modèle Logique de Données (MLD). Nous avons ensuite créé le schéma de la base de données PostgreSQL en tenant compte des besoins en performance et en scalabilité.",
+    "link": "#"
+  },
+  {
+    "id": 5,
+    "title": "Phase de Réflexion et Conception",
+    "description": "Brainstorming, choix technologiques et architecture du système",
+    "content": "Cette phase a impliqué des sessions de brainstorming intensives pour définir l'architecture globale du système. Nous avons évalué différentes technologies avant de choisir notre stack, en prenant en compte les besoins du projet, la scalabilité future et l'expertise de l'équipe.",
+    "link": "#"
+  },
+  {
+    "id": 6,
+    "title": "Maquette Figma",
+    "description": "Conception de l'interface utilisateur et du flux de navigation",
+    "content": "Nous avons utilisé Figma pour créer des maquettes détaillées de notre application. Cette étape a été cruciale pour visualiser l'interface utilisateur, définir le flux de navigation et assurer une expérience utilisateur cohérente. Les maquettes ont servi de référence tout au long du développement frontend, permettant une collaboration efficace entre designers et développeurs. Elles ont également facilité les retours des parties prenantes avant le début du développement.",
+    "link": "https://www.figma.com/"
+  },
+  {
+    "id": 7,
+    "title": "Développement Backend",
+    "description": "Configuration de Spring Boot et de l'API RESTful",
+    "content": "Le backend a été développé avec Spring Boot, offrant une API RESTful robuste. Nous avons implémenté des contrôleurs, des services et des repositories pour gérer la logique métier et l'accès aux données. L'authentification JWT a été mise en place pour sécuriser l'API.",
+    "link": "https://spring.io/projects/spring-boot"
+  },
+  {
+    "id": 8,
+    "title": "Développement Frontend",
+    "description": "Mise en place de React, Vite et Tailwind CSS",
+    "content": "Pour le frontend, nous avons choisi React pour sa flexibilité et sa performance. Vite a été utilisé comme outil de build pour son temps de démarrage rapide. Tailwind CSS nous a permis de créer une interface utilisateur cohérente et responsive rapidement.",
+    "link": "https://reactjs.org/"
+  },
+  {
+    "id": 9,
+    "title": "Intégration et Tests",
+    "description": "Mise en place de tests unitaires, d'intégration et utilisateurs",
+    "content": "Nous avons adopté une approche de Test-Driven Development (TDD) en écrivant des tests unitaires pour chaque fonctionnalité. Des tests d'intégration ont été mis en place pour vérifier l'interaction entre les différents composants. Enfin, des tests utilisateurs ont été conduits pour valider l'expérience utilisateur.",
+    "link": "#"
+  },
+  {
+    "id": 10,
+    "title": "Déploiement",
+    "description": "Configuration de Docker et mise en place de l'intégration continue",
+    "content": "L'application a été conteneurisée avec Docker pour assurer une cohérence entre les environnements de développement et de production. Nous avons mis en place une pipeline CI/CD avec Jenkins pour automatiser les tests, le build et le déploiement.",
+    "link": "https://www.docker.com/"
+  },
+  {
+    "id": 11,
+    "title": "Démonstration de l'Application",
+    "description": "Accès à l'application de démonstration",
+    "content": "Une version de démonstration de l'application est disponible pour explorer les fonctionnalités développées. Vous pouvez accéder à l'application en local ou consulter notre page de démonstration pour une présentation guidée.",
+    "link": "/demo"
+  }
+]
