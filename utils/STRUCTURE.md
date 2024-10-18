@@ -1,13 +1,14 @@
-
 # Project Structure
 
 ## Root Directory
+
 - `LICENSE/`: License information.
 - `compose.yaml`: Docker Compose configuration file.
 - `package-lock.json`: Lock file for npm dependencies.
 - `start.sh`: Shell script to start the project.
 
 ## Forme Directory (Backend)
+
 - `Dockerfile`: Dockerfile for the backend.
 - `compose.prod.yaml`: Docker Compose configuration for production.
 - `compose.yaml`: Docker Compose configuration.
@@ -134,6 +135,7 @@
                 - `UserServiceTest.java`
 
 ## form-front Directory (Frontend)
+
 - `components.json`: Components configuration file.
 - `eslint.config.js`: ESLint configuration file.
 - `index.html`: Main HTML file.
