@@ -2,9 +2,9 @@ import { Button } from '@/components/ui/button'
 import { Link } from 'react-router-dom'
 import { ArrowRightIcon } from 'lucide-react'
 // import logos
-import afpaLogo from '/logos/afpa_logo.svg'
-import afpaLogoDark from '/logos/afpa_logo-dark.svg'
-import franceTravailLogo from '/logos/LOGO-FRANCE-TRAVAIL.png'
+import afpaLogo from '../../../logos/afpa_logo.svg'
+import afpaLogoDark from '../../../logos/afpa_logo-dark.svg'
+import franceTravailLogo from '../../../logos/LOGO-FRANCE-TRAVAIL.png'
 
 const Home = () => {
   return (
