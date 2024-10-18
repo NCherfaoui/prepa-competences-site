@@ -1,54 +1,56 @@
-import { fileURLToPath, URL } from "url";
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import { resolve } from "path";
-import { codecovVitePlugin } from "@codecov/vite-plugin";
-
+import { fileURLToPath, URL } from 'url'
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import { resolve } from 'path'
+import { codecovVitePlugin } from '@codecov/vite-plugin'
 
 // https://vitejs.dev/config/
 export default defineConfig({
   server: {
-    host: "::",
-    port: "8080",
+    host: '::',
+    port: '8080'
   },
   plugins: [
     react(),
     codecovVitePlugin({
       enableBundleAnalysis: process.env.CODECOV_TOKEN !== undefined,
-      bundleName: "prepa-competences-site",
-      uploadToken: process.env.CODECOV_TOKEN,
+      bundleName: 'prepa-competences-site',
+      uploadToken: process.env.CODECOV_TOKEN
     })
   ],
   test: {
     globals: true,
-    environment: "jsdom",
-    setupFiles: "./tests/setup.js",
+    environment: 'jsdom',
+    setupFiles: './tests/setup.js',
     coverage: {
-      reporter: ["text", "lcov"],
+      reporter: ['text', 'lcov']
     }
   },
   resolve: {
     alias: [
       {
-        find: "@",
-        replacement: fileURLToPath(new URL("./src", import.meta.url)),
+        find: '@',
+        replacement: fileURLToPath(new URL('./src', import.meta.url))
       },
       {
-        find: "lib",
-        replacement: resolve(fileURLToPath(new URL(".", import.meta.url)), "lib"),
-      },
-    ],
+        find: 'lib',
+        replacement: resolve(
+          fileURLToPath(new URL('.', import.meta.url)),
+          'lib'
+        )
+      }
+    ]
   },
-  base: "/prepa-competences-site/",
+  base: '/prepa-competences-site/',
   build: {
-    outDir: "dist",
+    outDir: 'dist',
     chunkSizeWarningLimit: 1000,
     rollupOptions: {
       output: {
         manualChunks: {
-          vendor: ['react', 'react-dom'],
-        },
-      },
-    },
-  },
-});
+          vendor: ['react', 'react-dom']
+        }
+      }
+    }
+  }
+})
