@@ -19,6 +19,11 @@ export default defineConfig({
       uploadToken: process.env.CODECOV_TOKEN,
     })
   ],
+  test: {
+    globals: true,
+    environment: "jsdom",
+    setupFiles: "./tests/setup.js",
+  },
   resolve: {
     alias: [
       {

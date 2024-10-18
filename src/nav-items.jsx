@@ -7,6 +7,7 @@ import Demo from "./pages/Demo.jsx";
 import TechDetails from "./components/TechDetails.jsx";
 import ProcessusDev from "./pages/ProcessusDev.jsx";
 
+
 export const navItems = [
   {
     title: "Accueil",
@@ -31,6 +32,7 @@ export const navItems = [
     to: "/development",
     icon: <CodeIcon className="h-4 w-4" />,
     page: <Development />,
+    details: <TechDetails />,
   },
   {
     title: "Processus de Développement",
@@ -44,5 +46,4 @@ export const navItems = [
     icon: <RocketIcon className="h-4 w-4" />,
     page: <Demo />,
   },
-  {to: '/tech-details', page: <TechDetails /> },
 ];

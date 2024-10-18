@@ -7,7 +7,8 @@ import { navItems } from "./nav-items";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ThemeToggle from "./components/ThemeToggle";
-
+import NotFound from "./pages/NotFound";
+import TechDetails from "./components/TechDetails";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,8 @@ const App = () => (
                   {navItems.map(({ to, page }) => (
                     <Route key={to} path={to} element={page} />
                   ))}
+                  <Route path="/tech-details" element={<TechDetails />} />
+                  <Route path="*" element={<NotFound />} />
                 </Routes>
               </main>
               <Footer />

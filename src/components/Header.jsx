@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
 import { navItems } from '../nav-items';
+import ErrorBoundary from '../components/ErrorBoundary';
 
 const Header = () => {
   return (
-    <header className="bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white shadow-md">
+  <ErrorBoundary>
+    <header role="banner" className="bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white shadow-md">
       <nav className="container mx-auto px-4 py-4">
         <ul className="flex space-x-6 justify-center">
           {navItems.map(({ title, to, icon }) => (
@@ -20,6 +22,7 @@ const Header = () => {
         </ul>
       </nav>
     </header>
+  </ErrorBoundary>
   );
 };
 
