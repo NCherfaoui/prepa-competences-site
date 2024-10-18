@@ -36,3 +36,5 @@ ignore:
 
 paths:
   - src
+test_results:
+  file: './coverage/junit.xml'
