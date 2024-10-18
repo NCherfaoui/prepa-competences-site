@@ -1,3 +1,4 @@
+[![codecov](https://codecov.io/gh/NCherfaoui/prepa-competences-site/graph/badge.svg?token=RCf7aZpROP)](https://codecov.io/gh/NCherfaoui/prepa-competences-site)
 # Prépa Compétences - Site de Présentation
 
 Bienvenue sur le dépôt GitHub du site de présentation de "Prépa Compétences". Ce site a été développé dans le cadre de notre formation Concepteur Développeur d'Applications (CDA) pour présenter le programme "Prépa Compétences" ainsi que l'application que nous avons développée en groupe.
