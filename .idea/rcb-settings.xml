@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ReactBuddyPluginProjectSettings">
+    <option name="componentSubDirectory" />
+    <option name="defaultDirectory" value="$PROJECT_DIR$/tests" />
+    <option name="devServerConfigs">
+      <DevServerState>
+        <option name="packageJsonPath" value="$PROJECT_DIR$/package.json" />
+        <option name="scriptName" value="dev" />
+        <option name="url" value="http://localhost:8080/prepa-competences-site/" />
+      </DevServerState>
+    </option>
+    <option name="useDefaultDirectory" value="true" />
+  </component>
+</project>
