@@ -22,3 +22,16 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+.env
+
+# Build directories and files
+**/build
+**/dist
+**/node_modules
+**/node_modules
+
+# coverage
+coverage
+*.lcov
+*.d.ts
+
