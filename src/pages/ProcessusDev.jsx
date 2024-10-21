@@ -53,13 +53,12 @@ const ProcessusDev = () => {
   return (
     <div className='container mx-auto px-4 py-8'>
       <h1 className='text-3xl font-bold mb-6'>Développement du Projet</h1>
-
-      <Card className='mb-6 dark:bg-gray-800 p-6 rounded-lg shadow-lg'>
+      <Card className='mb-6 dark:bg-gray-800 p-6  custom-shadow'>
         <CardHeader>
           <CardTitle>Notre Stack Technologique</CardTitle>
           <CardDescription>Les technologies que nous utilisons</CardDescription>
         </CardHeader>
-        <CardContent>
+        <CardContent >
           <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
             {techStack.map((tech, index) => (
               <TechIcon key={index} {...tech} />
@@ -80,7 +79,7 @@ const ProcessusDev = () => {
         {cards.map((card) => (
           <Card
             key={card.id}
-            className='mb-6 dark:bg-gray-800 p-6 rounded-lg shadow-lg flex flex-col'
+            className='mb-6 dark:bg-gray-800 p-6 custom-shadow flex flex-col '
           >
             <CardHeader>
               <CardTitle>{card.title}</CardTitle>

@@ -74,6 +74,6 @@
     "title": "Démonstration de l'Application",
     "description": "Accès à l'application de démonstration",
     "content": "Une version de démonstration de l'application est disponible pour explorer les fonctionnalités développées. Vous pouvez accéder à l'application en local ou consulter notre page de démonstration pour une présentation guidée.",
-    "link": "/demo"
+    "link": "./demo"
   }
 ]

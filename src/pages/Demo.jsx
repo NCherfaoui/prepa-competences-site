@@ -1,7 +1,34 @@
-import { useState, useEffect, useCallback } from 'react'
+import React, { useState, useEffect, useCallback, memo } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+
+const Slide = memo(({ slide, toggleImageOpen }) => (
+  <motion.div
+    key={slide.title}
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={{ duration: 0.5 }}
+    className='bg-white dark:bg-gray-800 px-8 py-6 rounded-lg shadow-lg h-full flex flex-col justify-between'
+  >
+    <button
+      onClick={toggleImageOpen}
+      className='w-full max-h-[50vh] object-cover h-full rounded-lg mb-4 cursor-pointer'
+      aria-label={`Open image ${slide.title}`}
+    >
+      <img
+        src={slide.image}
+        alt={slide.title}
+        className='w-full h-full object-cover rounded-lg'
+      />
+    </button>
+    <div className='my-auto'>
+      <h2 className='text-2xl font-semibold mb-4'>{slide.title}</h2>
+      <p className='text-gray-600 dark:text-gray-300'>{slide.description}</p>
+    </div>
+  </motion.div>
+))
 
 const Demo = () => {
   const [slides, setSlides] = useState([])
@@ -13,9 +40,10 @@ const Demo = () => {
       .then((response) => response.json())
       .then((data) => setSlides(data))
   }, [])
-  const toggleImageOpen = () => {
+
+  const toggleImageOpen = useCallback(() => {
     setIsImageOpen(!isImageOpen)
-  }
+  }, [isImageOpen])
 
   const nextSlide = useCallback(() => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length)
@@ -37,6 +65,7 @@ const Demo = () => {
     },
     [nextSlide, prevSlide]
   )
+
   useEffect(() => {
     window.addEventListener('keydown', handleKeyDown)
     return () => {
@@ -44,7 +73,7 @@ const Demo = () => {
     }
   }, [handleKeyDown])
 
-  if (slides.length === 0) {
+  if (!slides.length) {
     return (
       <div className='flex items-center justify-center h-screen'>
         <div className='loader' />
@@ -57,46 +86,7 @@ const Demo = () => {
       <h1 className='text-4xl font-bold mb-8 text-center'>Démonstration</h1>
       <div className='relative h-full mx-auto w-full'>
         <AnimatePresence mode='wait'>
-          <motion.div
-            key={currentSlide}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
-            className='bg-white dark:bg-gray-800 px-8 py-6 rounded-lg shadow-lg h-full flex flex-col justify-between'
-          >
-            <button
-              onClick={toggleImageOpen}
-              className='w-full max-h-[50vh] object-cover h-full rounded-lg mb-4 cursor-pointer'
-              aria-label={`Open image ${slides[currentSlide].title}`}
-            >
-              <img
-                src={slides[currentSlide].image}
-                alt={slides[currentSlide].title}
-                className='w-full h-full object-cover rounded-lg'
-              />
-            </button>
-            <div className='my-auto'>
-              <h2 className='text-2xl font-semibold mb-4'>
-                {slides[currentSlide].title}
-              </h2>
-              <p className='text-gray-600 dark:text-gray-300'>
-                {slides[currentSlide].description}
-              </p>
-            </div>
-            <Button
-              onClick={prevSlide}
-              className='absolute top-1/2 transform -translate-y-1/2 bg-blue-600/40 hover:bg-blue-800 transition-colors p-2 rounded-full shadow-lg'
-            >
-              <ChevronLeft className='h-6 w-6 text-white/50 hover:text-white/100' />
-            </Button>
-            <Button
-              onClick={nextSlide}
-              className='absolute right-8 top-1/2 transform -translate-y-1/2 bg-blue-600/40 hover:bg-blue-800 transition-colors p-2 rounded-full shadow-lg'
-            >
-              <ChevronRight className='h-6 w-6 text-white/50 hover:text-white/100' />
-            </Button>
-          </motion.div>
+          <Slide slide={slides[currentSlide]} toggleImageOpen={toggleImageOpen} />
         </AnimatePresence>
       </div>
 
