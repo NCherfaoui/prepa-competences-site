@@ -1,108 +1,77 @@
- [
-    {
-      "title": "Inscription et Profil",
-      "description":
-        "Les candidats peuvent s'inscrire et créer leur profil, en renseignant leurs compétences et objectifs professionnels.",
-      "image":
-        "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-    },
-    {
-      "title": "Planification des Ateliers",
-      "description":
-        "Les formateurs peuvent planifier et organiser des ateliers, que les candidats peuvent consulter et auxquels ils peuvent s'inscrire.",
-      "image":
-        "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-    },
-    {
-      "title": "Suivi des Progrès",
-      "description":
-        "Les candidats et les formateurs peuvent suivre les progrès réalisés au fil du temps, avec des visualisations claires des compétences acquises.",
-      "image":
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-    },
-    {
-      "title": "Évaluation des Compétences",
-      "description":
-        "Les formateurs peuvent évaluer les compétences des candidats et fournir des retours détaillés pour guider leur progression.",
-      "image":
-        "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-    },
-    {
-      "title": "Communication Intégrée",
-      "description":
-        "Une messagerie intégrée permet une communication fluide entre candidats, formateurs et administrateurs.",
-      "image":
-        "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-    },
-    {
-      "title": "Gestion des Documents",
-      "description":
-        "Un système de gestion documentaire permet le partage et l'accès facile aux ressources pédagogiques et administratives.",
-      "image":
-        "https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-    },
-    {
-      "title": "Tableau de Bord Personnalisé",
-      "description":
-        "Chaque utilisateur bénéficie d'un tableau de bord personnalisé affichant les informations pertinentes selon son rôle.",
-      "image":
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-    },
-    {
-      "title": "Gestion des Sessions de Formation",
-      "description":
-        "Les administrateurs peuvent créer et gérer les sessions de formation, y compris l'affectation des formateurs et le suivi des participants.",
-      "image":
-        "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-    },
-    {
-      "title": "Reporting et Statistiques",
-      "description":
-        "Des outils de reporting avancés permettent de générer des statistiques et des rapports sur les performances et l'efficacité du programme.",
-      "image":
-        "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-    },
-    {
-      "title": "Gestion des Droits d'Accès",
-      "description":
-        "Un système de gestion des droits d'accès assure que chaque utilisateur a accès uniquement aux fonctionnalités appropriées à son rôle.",
-      "image":
-        "https://images.unsplash.com/photo-1560179707-f14e90ef3623?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-    },
-    {
-      "title": "Interface Mobile",
-      "description":
-        "Une interface responsive permet l'accès à l'application depuis n'importe quel appareil, offrant une flexibilité maximale aux utilisateurs.",
-      "image":
-        "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-    },
-    {
-      "title": "Intégration avec France Travail",
-      "description":
-        "L'application s'intègre avec les systèmes de France Travail pour un partage fluide des informations et des mises à jour de statut.",
-      "image":
-        "https://images.unsplash.com/photo-1554774853-aae0a22c8aa4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-    },
-    {
-      "title": "Suivi des Stages en Entreprise",
-      "description":
-        "Un module dédié permet de suivre les stages en entreprise des candidats, incluant les évaluations et les retours d'expérience.",
-      "image":
-        "https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-    },
-    {
-      "title": "Gestion des Compétences",
-      "description":
-        "Un référentiel de compétences permet de cartographier et de suivre l'évolution des compétences de chaque candidat.",
-      "image":
-        "https://images.unsplash.com/photo-1434626881859-194d67b2b86f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-    },
-    {
-      "title": "Assistance et Support",
-      "description":
-        "Un système de support intégré offre une assistance rapide aux utilisateurs en cas de questions ou de problèmes techniques.",
-      "image":
-        "https://images.unsplash.com/photo-1549637642-90187f64f420?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
-    }
-  ]
-  
+[
+  {
+    "title": "Inscription et Profil",
+    "description": "Les candidats peuvent s'inscrire et créer leur profil, en renseignant leurs compétences et objectifs professionnels.",
+    "image": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    "title": "Planification des Ateliers",
+    "description": "Les formateurs peuvent planifier et organiser des ateliers, que les candidats peuvent consulter et auxquels ils peuvent s'inscrire.",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    "title": "Suivi des Progrès",
+    "description": "Les candidats et les formateurs peuvent suivre les progrès réalisés au fil du temps, avec des visualisations claires des compétences acquises.",
+    "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    "title": "Évaluation des Compétences",
+    "description": "Les formateurs peuvent évaluer les compétences des candidats et fournir des retours détaillés pour guider leur progression.",
+    "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    "title": "Communication Intégrée",
+    "description": "Une messagerie intégrée permet une communication fluide entre candidats, formateurs et administrateurs.",
+    "image": "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    "title": "Gestion des Documents",
+    "description": "Un système de gestion documentaire permet le partage et l'accès facile aux ressources pédagogiques et administratives.",
+    "image": "https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    "title": "Tableau de Bord Personnalisé",
+    "description": "Chaque utilisateur bénéficie d'un tableau de bord personnalisé affichant les informations pertinentes selon son rôle.",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    "title": "Gestion des Sessions de Formation",
+    "description": "Les administrateurs peuvent créer et gérer les sessions de formation, y compris l'affectation des formateurs et le suivi des participants.",
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    "title": "Reporting et Statistiques",
+    "description": "Des outils de reporting avancés permettent de générer des statistiques et des rapports sur les performances et l'efficacité du programme.",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    "title": "Gestion des Droits d'Accès",
+    "description": "Un système de gestion des droits d'accès assure que chaque utilisateur a accès uniquement aux fonctionnalités appropriées à son rôle.",
+    "image": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    "title": "Interface Mobile",
+    "description": "Une interface responsive permet l'accès à l'application depuis n'importe quel appareil, offrant une flexibilité maximale aux utilisateurs.",
+    "image": "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    "title": "Intégration avec France Travail",
+    "description": "L'application s'intègre avec les systèmes de France Travail pour un partage fluide des informations et des mises à jour de statut.",
+    "image": "https://images.unsplash.com/photo-1554774853-aae0a22c8aa4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    "title": "Suivi des Stages en Entreprise",
+    "description": "Un module dédié permet de suivre les stages en entreprise des candidats, incluant les évaluations et les retours d'expérience.",
+    "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    "title": "Gestion des Compétences",
+    "description": "Un référentiel de compétences permet de cartographier et de suivre l'évolution des compétences de chaque candidat.",
+    "image": "https://images.unsplash.com/photo-1434626881859-194d67b2b86f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  },
+  {
+    "title": "Assistance et Support",
+    "description": "Un système de support intégré offre une assistance rapide aux utilisateurs en cas de questions ou de problèmes techniques.",
+    "image": "https://images.unsplash.com/photo-1549637642-90187f64f420?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+  }
+]

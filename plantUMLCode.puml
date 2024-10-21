@@ -7,7 +7,7 @@ entity Roles {
     role_name : VARCHAR(100)
 }
 
-entity Centers {
+entity Centres {
     * id : SERIAL [PK]
     ---
     center_name : VARCHAR(100)
@@ -15,7 +15,7 @@ entity Centers {
     center_telephone : VARCHAR(15)
 }
 
-abstract class Person {
+abstract class Personne {
     * id : SERIAL [PK]
     ---
     first_name : VARCHAR(100)
@@ -26,19 +26,24 @@ abstract class Person {
     role_id : INTEGER [FK]
 }
 
-entity Candidates {
+entity Candidats {
     birth_date : DATE
+    ft_number : VARCHAR(100)
+    ft_agency : VARCHAR(100)
+    ft_ref_name : VARCHAR(100)
+    ft_ref_phone : VARCHAR(15)
+    ft_ref_email : VARCHAR(100)
 }
 
-entity Formers {}
+entity Formateurs {}
 
-entity Administrators {}
+entity Administrateurs {}
 
-entity FranceTravailAdvisors {
+entity ConseillersFranceTravail {
     agency : VARCHAR(100)
 }
 
-entity Paths {
+entity Parcours {
     * id : SERIAL [PK]
     ---
     candidate_id : INTEGER [FK]
@@ -56,9 +61,11 @@ entity Phases {
     ---
     path_id : INTEGER [FK]
     phase_name : VARCHAR(100)
+    start_date : DATE
+    end_date : DATE
 }
 
-entity Workshop {
+entity Atelier {
     * id : SERIAL [PK]
     ---
     name : VARCHAR(100)
@@ -68,16 +75,18 @@ entity Workshop {
     prerequisites : TEXT
 }
 
-entity WorkshopSession {
+entity SessionAtelier {
     * id : SERIAL [PK]
     ---
     workshop_id : INTEGER [FK]
     phase_id : INTEGER [FK]
+    center_id : INTEGER [FK]
+    former_id : INTEGER [FK]
     start_date : DATE
     end_date : DATE
 }
 
-entity Engagemnt {
+entity PresenceAtelier {
     * id : SERIAL [PK]
     ---
     workshop_session_id : INTEGER [FK]
@@ -86,14 +95,14 @@ entity Engagemnt {
     candidate_comments : TEXT
 }
 
-entity Assessments {
+entity Evaluations {
     * id : SERIAL [PK]
     ---
     workshop_attendance_id : INTEGER [FK]
     former_comments : TEXT
 }
 
-entity ExitAssessment {
+entity BilanSortie {
     * id : SERIAL [PK]
     ---
     path_id : INTEGER [FK]
@@ -120,27 +129,57 @@ entity Documents {
     generation_date : DATE
 }
 
-Person <|-- Candidates
-Person <|-- Formers
-Person <|-- Administrators
-Person <|-- FranceTravailAdvisors
+entity Competences {
+    * id : SERIAL [PK]
+    ---
+    name : VARCHAR(100)
+    description : TEXT
+}
 
-Roles ||--o{ Person
-Centers ||--o{ Paths
-Centers ||--o{ WorkshopSession
-Candidates ||--o{ Paths
-Candidates ||--o{ Engagemnt
-Formers ||--o{ Paths
-Formers ||--o{ WorkshopSession
-Formers ||--o{ Assessments
-FranceTravailAdvisors ||--o{ Paths
-Paths ||--o{ Phases
-Paths ||--o{ ExitAssessment
-Paths ||--o{ Documents
-Phases ||--o{ WorkshopSession
-Workshop ||--o{ WorkshopSession
-Engagemnt }o--|| WorkshopSession
-Engagemnt ||--o{ Assessments
-Workshop ||--o{ Assessments
-ExitAssessment ||--o{ Documents
+entity CompetencesCandidat {
+    * id : SERIAL [PK]
+    ---
+    candidate_id : INTEGER [FK]
+    competence_id : INTEGER [FK]
+    level : INTEGER
+    acquisition_date : DATE
+}
+
+entity Retours {
+    * id : SERIAL [PK]
+    ---
+    workshop_session_id : INTEGER [FK]
+    candidate_id : INTEGER [FK]
+    rating : INTEGER
+    comments : TEXT
+    submission_date : DATE
+}
+
+Personne <|-- Candidats
+Personne <|-- Formateurs
+Personne <|-- Administrateurs
+Personne <|-- ConseillersFranceTravail
+
+Roles ||--o{ Personne
+Centres ||--o{ Parcours
+Centres ||--o{ SessionAtelier
+Candidats ||--o{ Parcours
+Candidats ||--o{ PresenceAtelier
+Candidats ||--o{ CompetencesCandidat
+Candidats ||--o{ Retours
+Formateurs ||--o{ Parcours
+Formateurs ||--o{ SessionAtelier
+Formateurs ||--o{ Evaluations
+ConseillersFranceTravail ||--o{ Parcours
+Parcours ||--o{ Phases
+Parcours ||--o{ BilanSortie
+Parcours ||--o{ Documents
+Phases ||--o{ SessionAtelier
+Atelier ||--o{ SessionAtelier
+PresenceAtelier }o--|| SessionAtelier
+PresenceAtelier ||--o{ Evaluations
+BilanSortie ||--o{ Documents
+Competences ||--o{ CompetencesCandidat
+SessionAtelier ||--o{ Retours
+
 @enduml
