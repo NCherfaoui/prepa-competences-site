@@ -58,7 +58,7 @@ const ProcessusDev = () => {
           <CardTitle>Notre Stack Technologique</CardTitle>
           <CardDescription>Les technologies que nous utilisons</CardDescription>
         </CardHeader>
-        <CardContent >
+        <CardContent>
           <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
             {techStack.map((tech, index) => (
               <TechIcon key={index} {...tech} />
