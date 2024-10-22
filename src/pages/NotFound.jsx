@@ -1,14 +1,15 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import { Button } from '@/components/ui/button';
+import CustomButton from '@/components/ui/CustomButton';
+import { Link } from 'react-router-dom';
 
 const NotFound = () => {
   return (
-    <div className='not-found'>
-      <h1>404 Not Found</h1>
-      <p>Sorry, the page you are looking for does not exist.</p>
-      <Link to='/'>Go to Home</Link>
+    <div className='not-found text-center'>
+      <h1 className='text-4xl font-bold my-12'>404 Page Non Trouvée</h1>
+      <p className='text-lg mb-6'>Désolé, la page que vous recherchez n'existe pas.</p>
+      <CustomButton onClick={() => window.location.replace('/')}>Retour à l'accueil</CustomButton>
     </div>
-  )
+  );
 }
 
-export default NotFound
+export default NotFound;
