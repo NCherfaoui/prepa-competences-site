@@ -104,9 +104,7 @@ body {
   z-index: 1;
   @apply shadow-lg rounded-lg;
   transition: all 0.3s ease;
-
-  }
-
+}
 
 .custom-shadow:hover {
   @apply shadow-2xl rounded-xl;
@@ -115,7 +113,9 @@ body {
   /*box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;*/
   /*box-shadow: rgba(32, 43, 250, 0.5) 0px 2px 4px 0px inset;*/
   /*box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;*/
-  box-shadow: rgb(32, 43, 250) 2px 2px 4px 0 inset, rgb(32, 181, 250) -2px -2px 4px 1px inset;
+  box-shadow:
+    rgb(32, 43, 250) 2px 2px 4px 0 inset,
+    rgb(32, 181, 250) -2px -2px 4px 1px inset;
   transform: scale(1.015);
 }
 

@@ -44,13 +44,13 @@ const Demo = () => {
     }
   }, [handleKeyDown])
 
- if (!slides.length) {
-  return (
-    <div className='flex items-center justify-center h-screen'>
-      <div className='loader' />
-    </div>
-  )
-}
+  if (!slides.length) {
+    return (
+      <div className='flex items-center justify-center h-screen'>
+        <div className='loader' />
+      </div>
+    )
+  }
 
   return (
     <div className='container mx-auto px-4 py-8 h-screen max-h-[90vh] flex justify-center flex-col'>
