@@ -35,4 +35,3 @@ dist-ssr
 coverage
 *.lcov
 *.d.ts
-/src/dev/

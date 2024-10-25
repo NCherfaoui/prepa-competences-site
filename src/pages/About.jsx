@@ -33,7 +33,7 @@ const About = () => {
           <section className="mb-12">
           <h2 className='text-3xl font-semibold mb-6'>Qu'est-ce que Prépa Compétences ?</h2>
             <p className='text-gray-600 dark:text-gray-300 mb-4 w-[90%]'>
-              Prépa Compétences est un accompagnement individuel innovant qui vise à safegarder le projet professionnel des participants, préparer leur entrée en formation et garantir sa réussite pour accéder à un emploi durable.
+              Prépa Compétences est un accompagnement individuel innovant qui vise à sauvegarder le projet professionnel des participants, préparer leur entrée en formation et garantir sa réussite pour accéder à un emploi durable.
             </p>
             
           </section>
